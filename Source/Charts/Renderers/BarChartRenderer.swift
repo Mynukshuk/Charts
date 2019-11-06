@@ -954,11 +954,11 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
             height += barRects[index].height
         }
 
-        topRectInBar.size.height = height
+        //topRectInBar.size.height = height
 
         return topRectInBar
     }
-
+    
     /// Creates path for bar in rect with rounded corners
     internal func createBarPath(for rect: CGRect, roundedCorners: UIRectCorner) -> UIBezierPath {
 
