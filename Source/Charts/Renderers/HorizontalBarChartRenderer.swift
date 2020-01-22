@@ -663,7 +663,7 @@ open class HorizontalBarChartRenderer: BarChartRenderer
     
     override internal func createBarPath(for rect: CGRect, roundedCorners: UIRectCorner) -> UIBezierPath {
 
-        let cornerRadius = rect.height / 2.0
+        let cornerRadius = 3 //rect.height / 2.0
 
         let path = UIBezierPath(roundedRect: rect,
                                 byRoundingCorners: roundedCorners,

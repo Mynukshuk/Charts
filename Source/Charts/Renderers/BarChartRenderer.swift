@@ -962,7 +962,7 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
     /// Creates path for bar in rect with rounded corners
     internal func createBarPath(for rect: CGRect, roundedCorners: UIRectCorner) -> UIBezierPath {
 
-        let cornerRadius = rect.width / 2.0
+        let cornerRadius = 3//rect.width / 2.0
 
         let path = UIBezierPath(roundedRect: rect,
                                 byRoundingCorners: roundedCorners,
